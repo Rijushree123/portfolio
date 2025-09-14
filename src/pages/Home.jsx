@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import About from "./About.jsx";
+import Projects from "./Projects";
 
 // AnimatedText Component
 const AnimatedText = ({ text }) => {
@@ -12,12 +14,12 @@ const AnimatedText = ({ text }) => {
             if (index === text.length) {
                 clearInterval(interval);
             }
-        }, 150); // 150ms delay between letters
+        }, 150);
         return () => clearInterval(interval);
     }, [text]);
 
     return (
-        <h1 className="text-4xl md:text-6xl font-bold text-white">
+        <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wide">
             {displayed}
         </h1>
     );
@@ -25,16 +27,18 @@ const AnimatedText = ({ text }) => {
 
 const Home = () => {
     return (
-        <div className="flex flex-col items-center text-center space-y-12">
+        <div className="flex flex-col items-center text-center space-y-16 bg-gray-900 text-gray-100">
 
             {/* Hero Section */}
-            <div className="w-full min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-black to-gray-900 px-4">
-                <div className="container mx-auto flex flex-col-reverse md:flex-row items-center md:justify-around space-y-8 md:space-y-0 md:space-x-10">
+            <div className="w-full min-h-screen flex items-center justify-center bg-cover bg-center px-4"
+                style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+            >
+                <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center md:justify-around space-y-8 md:space-y-0 md:space-x-12 py-8 md:py-0">
 
                     {/* Text Section */}
                     <div className="text-center md:text-left max-w-md">
                         <AnimatedText text="Rijushree Guha" />
-                        <p className="mt-4 text-rose-300 text-xl">
+                        <p className="mt-4 text-pink-300 text-xl font-semibold tracking-wide">
                             Software Developer | Automation Engineer
                         </p>
                     </div>
@@ -44,35 +48,20 @@ const Home = () => {
                         <img
                             src="/images/profile1.jpg"
                             alt="Rijushree Guha"
-                            className="w-40 h-40 md:w-80 md:h-80 rounded-full border-4 border-blue-500 shadow-lg"
+                            className="w-40 h-40 md:w-100 md:h-100 rounded-full border-4 border-pink-500 shadow-lg hover:scale-105 transition-transform duration-300"
                         />
                     </div>
 
                 </div>
             </div>
 
-            {/* About Intro Section */}
-            <section id="about" className="px-4 max-w-3xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4">About Me</h2>
-                <p className="text-gray-600">
-                    I'm a developer who enjoys building clean and functional web applications. I have experience in React, Node.js, automation testing, and more. I love solving problems and learning new technologies.
-                </p>
-            </section>
+            {/* About Me Section */}
+            
+            <About />
 
             {/* Projects Section */}
-            <section id="projects" className="px-4 max-w-4xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-6">Featured Projects</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-                        <h3 className="text-xl font-bold mb-2">Project One</h3>
-                        <p className="text-gray-600">A brief description of the project, technologies used, and the main features it offers.</p>
-                    </div>
-                    <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-                        <h3 className="text-xl font-bold mb-2">Project Two</h3>
-                        <p className="text-gray-600">A brief description of the project, technologies used, and the main features it offers.</p>
-                    </div>
-                </div>
-            </section>
+            <Projects/>
+
 
         </div>
     );
