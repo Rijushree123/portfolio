@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-900 text-white fixed w-full top-0 left-0 z-50 backdrop-blur-md shadow-lg transition-all duration-300">
-      <div className="container mx-auto flex justify-between items-center p-4 px-8 md:px-12">
+      <div className="container mx-auto flex justify-between items-center p-4 px-8 md:px-25">
         <a href="/" className="text-2xl font-bold tracking-wide">Portfolio</a>
 
         {/* Desktop Menu */}
