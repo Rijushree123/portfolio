@@ -15,12 +15,12 @@ const About = () => {
             {/* Education Section */}
             <div className="text-center mb-8">
                 <h3 className="text-2xl font-semibold text-gray-400 mb-6">Education</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
                     
                     {/* University Card */}
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                         <h4 className="text-xl font-bold text-pink-500 mb-2">University of Engineering & Management, Kolkata, India</h4>
-                        <p className="text-gray-600 italic mb-3">Bachelor of Engineering in Computer Science and Technology (CST) | 2019 – 2023</p>
+                        <p className="text-gray-600 italic mb-3">Bachelor of Engineering in Computer Science and Technology (B.Tech CST) | 2019 – 2023</p>
                         <ul className="list-disc list-inside text-gray-500 text-left">
                             <li>Among the top 5% of the batch</li>
                             <li>Scored 92%</li>
