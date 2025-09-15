@@ -1,7 +1,7 @@
 const About = () => {
     return (
         <section id="about" className="px-4 w-full mx-auto py-12 bg-gradient-to-r bg-white rounded-lg shadow-lg md:py-20">
-            <h2 className="text-3xl font-bold text-pink-400 text-center mb-8 border-b-2 border-pink-500 pb-2">
+            <h2 className="text-3xl font-bold text-pink-600 text-center mb-8 border-b-2 border-pink-500 pb-2">
                 About Me
             </h2>
 
@@ -14,8 +14,8 @@ const About = () => {
 
             {/* Education Section */}
             <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-pink-300 mb-6">Education</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+                <h3 className="text-2xl font-semibold text-gray-400 mb-6">Education</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-20">
                     
                     {/* University Card */}
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -30,21 +30,15 @@ const About = () => {
                     {/* Higher Secondary Card */}
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                         <h4 className="text-xl font-bold text-pink-500 mb-2">St. Stephen’s School, Dum Dum, Kolkata, India</h4>
-                        <p className="text-gray-600 italic mb-3">Higher Secondary - 12th ISC | 2019</p>
+                        <p className="text-gray-600 italic mb-3">Higher Secondary - Class 12th ISC | 2019</p>
                         <ul className="list-disc list-inside text-gray-500 text-left">
                             <li>Scored 89%</li>
                         </ul>
-                    </div>
-
-                    {/* Secondary Card */}
-                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                        <h4 className="text-xl font-bold text-pink-500 mb-2">St. Stephen’s School, Dum Dum, Kolkata, India</h4>
-                        <p className="text-gray-600 italic mb-3">Secondary - 10th ISC | 2017</p>
+                        <p className="text-gray-600 italic mb-3">Secondary - Class 10th ICSE | 2017</p>
                         <ul className="list-disc list-inside text-gray-500 text-left">
                             <li>Scored 90%</li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </section>

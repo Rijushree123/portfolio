@@ -17,6 +17,7 @@ const Footer = () => {
                     <a href="https://linkedin.com/in/rijushree-guha" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
                         <i className="fab fa-linkedin"></i> LinkedIn
                     </a>
+                    <a href="https://www.youtube.com/@techcoffeebreak" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">Youtube</a>
                 </div>
 
                 {/* Copyright */}
